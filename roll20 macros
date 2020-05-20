@@ -199,3 +199,8 @@ Attack roll [[2d20kl1 + 5]] to hit
 Damage: [[1d4]]
 If Critical: +([[4]] dmg)
 }}}
+
+/em casts Cure Wounds at ?{Level |
+1st, 1st level on ?{Target &#124; Fergus &#124; Kallista &#124; Kwilgok &#124; Morden  &#124; Natsu  &#124; Someone &#125; for [[1d8 + 3]]! |
+2nd, 2nd level on ?{Target &#124; Fergus &#124; Kallista &#124; Kwilgok &#124; Morden  &#124; Natsu  &#124; Someone &#125; for [[2d8 + 3]]! |
+3rd, 3rd level on ?{Target &#124; Fergus &#124; Kallista &#124; Kwilgok &#124; Morden  &#124; Natsu  &#124; Someone &#125; for [[3d8 + 3]]! }
