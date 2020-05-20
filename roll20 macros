@@ -1,0 +1,201 @@
+Macros
+
+/w ?{Whisper|DM|Fergus|Kallista|Kwilgok|Morden|Natsu} ?{what do you wish to say}
+
+rolls initiative [[1d20+3&{tracker}]]
+
+&{template:npcaction}{{rname=Light Crossbow}}{{description=Piercing
+?{Attack |
+Sneak, Sneak Attack!
+Attack roll [[1d20+5]] to hit.
+Damage [[1d8 + 3 + 2d6]]
+If Critical +[[8]] |
+Sneak Advantage, Sneak Attack! Advantage!
+Attack roll [[2d20kh1 + 5]] to hit.
+Damage [[1d8 + 3 + 2d6]]
+If Critical +[[8]] |
+Sneak Disadvantage, Sneak Attack! Disadvantage.
+Attack roll [[2d20kl1 + 5]] to hit.
+Damage [[1d8 + 3 + 2d6]]
+If Critical +[[8]] |
+Normal, Normal Attack
+Attack roll [[1d20+5]] to hit.
+Damage [[1d8 + 3]]
+If Critical +[[8]] |
+Normal Advantage, Normal Attack. Advantage!
+Attack roll [[2d20kh1 + 5]] to hit
+Damage [[1d8 + 3]]
+If Critical +[[8]] |
+Normal Disadvantage, Normal Attack. Disadvantage.
+Attack roll [[2d20kl1 + 5]] to hit
+Damage [[1d8 + 3]]
+If Critical +[[8]] |
+Sneak-Head, Sneak Attack! Headshot!
+Attack roll [[1d20]] to hit.
+Damage [[1d8 + 3 + 10 + 2d6]]
+If Critical +[[8]] |
+Sneak-Head Advantage, Sneak Attack! Advantage! Headshot!
+Attack roll [[2d20kh1]] to hit.
+Damage [[1d8 + 3 + 10 + 2d6]]
+If Critical +[[8]] |
+Sneak-Head Disadvantage, Sneak Attack! Headshot! Disadvantage.
+Attack roll [[2d20kl1]] to hit.
+Damage [[1d8 + 3 + 10 + 2d6]]
+If Critical +[[8]] |
+Normal-Head, Normal Attack. Headshot!
+Attack roll [[1d20]] to hit.
+Damage [[1d8 + 3 + 10]]
+If Critical +[[8]] |
+Normal-Head Advantage, Normal Attack. Advantage! Headshot!
+Attack roll [[2d20kh1]] to hit
+Damage [[1d8 + 3 + 10]]
+If Critical +[[8]] |
+Normal-Head Disadvantage, Normal Attack. Headshot! Disadvantage.
+Attack roll [[2d20kl1]] to hit
+Damage [[1d8 + 3 + 10]]
+If Critical +[[8]]
+}}}
+
+?{Rolling 20s |
+ 20x1, rolls a [[1d20+?{modifier &#124; 0 &#125;]] for ?{reason &#124; no reason &#125;. |
+ 20-Advantage, With advantage rolls a [[2d20kh1+?{modifier &#124; 0 &#125;]] for ?{reason &#124; no reason&#125;. |
+ 20-Disadvantage, With disadvantage rolls a [[2d20kl1+?{modifier &#124; 0 &#125;]] for ?{reason &#124; no reason&#125;. }
+
+ ?{Stat Check |
+   STR, Strength check for [[1d20 + 1]] |
+   DEX, Dexterity check for [[1d20 + 3]] |
+   CON, Constitution check for [[1d20 + 2]] |
+   INT, Intelligence check for [[1d20]] |
+   WIS, Wisdom check for [[1d20 - 1]] |
+   CHA, Charisma check for [[1d20]] |
+   STR-advantage, Strength check with advantage for [[2d20kh1 + 1]] |
+   DEX-advantage, Dexterity check with advantage for [[2d20kh1 + 3]] |
+   CON-advantage, Constitution check with advantage for [[2d20kh1 + 2]] |
+   INT-advantage, Intelligence check with advantage for [[2d20kh1]] |
+   WIS-advantage, Wisdom check with advantage for [[2d20kh1 - 1]] - 1]] |
+   CHA-advantage, Charisma check with advantage for [[2d20kh1]] |
+   STR-disadvantage, Strength check with disadvantage for [[2d20kl1 + 1]] |
+   DEX-disadvantage, Dexterity check with disadvantage for [[2d20kl1 + 3]] |
+   CON-disadvantage, Constitution check with disadvantage for [[2d20kl1 + 2]] |
+   INT-disadvantage, Intelligence check with disadvantage for [[2d20kl1]] |
+   WIS-disadvantage, Wisdom check with disadvantage for [[2d20kl1 - 1]] - 1]] |
+   CHA-disadvantage, Charisma check with disadvantage for [[2d20kl1]] }
+
+   ?{Saving Throw |
+   STR, Strength save for [[1d20 + 1]] |
+   DEX, Dexterity save for [[1d20 + 5]] |
+   CON, Constitution save for [[1d20 + 2]] |
+   INT, Intelligence save for [[1d20 + 2]] |
+   WIS, Wisdom save for [[1d20 - 1]] |
+   CHA, Charisma save for [[1d20]] |
+   STR-Advantage, Strength saving throw with advantage for [[2d20kh1 + 1]] |
+   DEX-Advantage, Dexterity saving throw with advantage for [[2d20kh1 + 5]] |
+   CON-Advantage, Constitution saving throw with advantage for [[2d20kh1 + 2]] |
+   INT-Advantage, Intelligence saving throw with advantage for [[2d20kh1 + 2]] |
+   WIS-Advantage, Wisdom saving throw with advantage for [[2d20kh1 - 1]] |
+   CHA-Advantage, Charisma saving throw with advantage for [[2d20kh1 ]] |
+   STR-disadvantage, Strength saving throw with disadvantage for [[2d20kl1 + 1]] |
+   DEX-disadvantage, Dexterity saving throw with disadvantage for [[2d20kl1 + 5]] |
+   CON-disadvantage, Constitution saving throw with disadvantage for [[2d20kl1 + 2]] |
+   INT-disadvantage, Intelligence saving throw with disadvantage for [[2d20kl1 + 2]] |
+   WIS-disadvantage, Wisdom saving throw with disadvantage for [[2d20kl1 - 1]] |
+   CHA-disadvantage, Charisma saving throw with disadvantage for [[2d20kl1 ]] }
+
+   ?{Skill Check |
+   Acrobatics, Acrobatics check for [[1d20 + 5]] |
+   Animal Handling, Animal Handling check for [[1d20 - 1]] |
+   Arcana, Arcana check for [[1d20]] |
+   Athletics, Athletics check for [[1d20 + 3]] |
+   Deception, Deception check for [[1d20]] |
+   History, History check for [[1d20]] |
+   Insight, Insight check for [[1d20 - 1]] |
+   Intimidation, Intimidation check for [[1d20]] |
+   Investigation, Investigation check for [[1d20 + 4]] |
+   Medicine, Medicine check for [[1d20 - 1]] |
+   Nature, Nature check for [[1d20 + 4]] |
+   Perception, Perception check for [[1d20 + 1]] |
+   Performance, Performance check for [[1d20]] |
+   Persuasion, Persuasion check for [[1d20]] |
+   Religion, Religion check for [[1d20]] |
+   Sleight of Hand, Sleight of Hand check for [[1d20 + 5]] |
+   Stealth, Stealth check for [[1d20 + 7]] |
+   Survival, Survival check for [[1d20 + 3]] |
+   Acrobatics-Advantage, Acrobatics check with advantage for [[2d20kh1 + 5]]|
+   Animal Handling-Advantage, Animal Handling check with advantage for [[2d20kh1 - 1]] |
+   Arcana-Advantage, Arcana check with advantage for [[2d20kh1 ]] |
+   Athletics-Advantage, Athletics check with advantage for [[2d20kh1 + 3]] |
+   Deception-Advantage, Deception check with advantage for [[2d20kh1 ]] |
+   History-Advantage, History check with advantage for [[2d20kh1 ]] |
+   Insight-Advantage, Insight check with advantage for [[2d20kh1  - 1]] |
+   Intimidation-Advantage, Intimidation check with advantage for [[2d20kh1 ]] |
+   Investigation-Advantage, Investigation check with advantage for [[2d20kh1 + 4]] |
+   Medicine-Advantage, Medicine check with advantage for [[2d20kh1 - 1]] |
+   Nature-Advantage, Nature check with advantage for [[2d20kh1 + 4]] |
+   Perception-Advantage, Perception check with advantage for [[2d20kh1 + 1]] |
+   Performance-Advantage, Performance check with advantage for [[2d20kh1 ]] |
+   Persuasion-Advantage, Persuasion check with advantage for [[2d20kh1 ]] |
+   Religion-Advantage, Religion check with advantage for [[2d20kh1 ]] |
+   Sleight of Hand-Advantage, Sleight of Hand check with advantage for [[2d20kh1 + 5]] |
+   Stealth-Advantage, Stealth check with advantage for [[2d20kh1 + 7]] |
+   Survival-Advantage, Survival check with advantage for [[2d20kh1 + 3]] |
+   Acrobatics-Disadvantage, Acrobatics check with advantage for [[2d20kl1 + 5]]|
+   Animal Handling-Disadvantage, Animal Handling check with advantage for [[2d20kl1 - 1]] |
+   Arcana-Disadvantage, Arcana check with advantage for [[2d20kl1 ]] |
+   Athletics-Disadvantage, Athletics check with disadvantage for [[2d20kl1 + 3]] |
+   Deception-Disadvantage, Deception check with disadvantage for [[2d20kl1 ]] |
+   History-Disadvantage, History check with disadvantage for [[2d20kl1 ]] |
+   Insight-Disadvantage, Insight check with disadvantage for [[2d20kl1  - 1]] |
+   Intimidation-Disadvantage, Intimidation check with disadvantage for [[2d20kl1 ]] |
+   Investigation-Disadvantage, Investigation check with disadvantage  for [[2d20kl1 + 4]] |
+   Medicine-Disadvantage, Medicine check with disadvantage for [[2d20kl1 - 1]] |
+   Nature-Disadvantage, Nature check with disadvantage for [[2d20kl1 + 4]] |
+   Perception-Disadvantage, Perception check with disadvantage for [[2d20kl1 + 1]] |
+   Performance-Disadvantage, Performance check with disadvantage for [[2d20kl1 ]] |
+   Persuasion-Disadvantage, Persuasion check with disadvantage for [[2d20kl1 ]] |
+   Religion-Disadvantage, Religion check with disadvantage for [[2d20kl1 ]] |
+   Sleight of Hand-Disadvantage, Sleight of Hand check with disadvantage for [[2d20kl1 + 5]] |
+   Stealth-Disadvantage, Stealth check with disadvantage  for [[2d20kl1 + 7]] |
+   Survival-Disadvantage, Survival check with disadvantage for [[2d20kl1 + 3]] }
+
+   &{template:npcaction}{{rname=Dagger - Main Hand}}{{description=Piercing
+?{Attack | Sneak, Sneak Attack!
+Attack roll [[1d20+5]] to hit.
+Damage [[1d4 + 3 + 2d6]]
+If Critical +[[4]] |
+Sneak Advantage, Sneak Attack! Advantage!
+Attack roll [[2d20kh1 + 5]] to hit.
+Damage [[1d4 + 3 + 2d6]]
+If Critical +[[4]] |
+Sneak Disadvantage, Sneak Attack! Disadvantage.
+Attack roll [[2d20kl1 + 5]] to hit.
+Damage [[1d4 + 3 + 2d6]]
+If Critical +[[4]] |
+Normal, Normal Attack
+Attack roll [[1d20+5]] to hit.
+Damage [[1d4+3]]
+If Critical +[[4]] |
+Normal Advantage, Normal Attack. Advantage!
+Attack roll [[2d20kh1 + 5]] to hit.
+Damage [[1d4+3]]
+If Critical +[[4]] |
+Normal Disadvantage, Normal Attack. Disadvantage.
+Attack roll [[2d20kl1 + 5]] to hit.
+Damage [[1d4+3]]
+If Critical +[[4]]
+}}}
+
+&{template:npcaction}{{rname=Dagger - Off Hand}}{{description=Piercing
+?{Attack |
+Normal, Normal Attack
+Attack roll [[1d20+5]] to hit.
+Damage: [[1d4]]
+If Critical: +([[4]] dmg) |
+Normal Advantage, Advantage!
+Attack roll [[2d20kh1 + 5]] to hit
+Damage: [[1d4]]
+If Critical: +([[4]] dmg) |
+Normal Disadvantage, Disadvantage.
+Attack roll [[2d20kl1 + 5]] to hit
+Damage: [[1d4]]
+If Critical: +([[4]] dmg)
+}}}
