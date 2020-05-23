@@ -5,55 +5,55 @@ Macros
 rolls initiative [[1d20+3&{tracker}]]
 
 &{template:npcaction}{{rname=Light Crossbow}}{{description=Piercing
-?{Attack |
+?{Attack | 
 Sneak, Sneak Attack!
-Attack roll [[1d20+5]] to hit.
-Damage [[1d8 + 3 + 2d6]]
-If Critical +[[8]] |
+Attack roll [[1d20+6  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage [[1d8 + 3 + 3d6]]
+If Critical +[[8]] | 
 Sneak Advantage, Sneak Attack! Advantage!
-Attack roll [[2d20kh1 + 5]] to hit.
-Damage [[1d8 + 3 + 2d6]]
-If Critical +[[8]] |
+Attack roll [[2d20kh1 + 6  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage [[1d8 + 3 + 3d6]]
+If Critical +[[8]] | 
 Sneak Disadvantage, Sneak Attack! Disadvantage.
-Attack roll [[2d20kl1 + 5]] to hit.
-Damage [[1d8 + 3 + 2d6]]
-If Critical +[[8]] |
-Normal, Normal Attack
-Attack roll [[1d20+5]] to hit.
+Attack roll [[2d20kl1 + 6  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage [[1d8 + 3 + 3d6]]
+If Critical +[[8]] | 
+Normal, Normal Attack 
+Attack roll [[1d20 + 6  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
 Damage [[1d8 + 3]]
-If Critical +[[8]] |
-Normal Advantage, Normal Attack. Advantage!
-Attack roll [[2d20kh1 + 5]] to hit
+If Critical +[[8]] | 
+Normal Advantage, Normal Attack. Advantage! 
+Attack roll [[2d20kh1 + 6  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit
 Damage [[1d8 + 3]]
-If Critical +[[8]] |
+If Critical +[[8]] | 
 Normal Disadvantage, Normal Attack. Disadvantage.
-Attack roll [[2d20kl1 + 5]] to hit
+Attack roll [[2d20kl1 + 6  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit
 Damage [[1d8 + 3]]
-If Critical +[[8]] |
+If Critical +[[8]] | 
 Sneak-Head, Sneak Attack! Headshot!
-Attack roll [[1d20]] to hit.
-Damage [[1d8 + 3 + 10 + 2d6]]
-If Critical +[[8]] |
-Sneak-Head Advantage, Sneak Attack! Advantage! Headshot!
-Attack roll [[2d20kh1]] to hit.
-Damage [[1d8 + 3 + 10 + 2d6]]
-If Critical +[[8]] |
+Attack roll [[1d20 + 1  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage [[1d8 + 3 + 10 + 3d6]]
+If Critical +[[8]] | 
+Sneak-Head Advantage, Sneak Attack! Advantage! Headshot! 
+Attack roll [[2d20kh1 + 1  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage [[1d8 + 3 + 10 + 3d6]]
+If Critical +[[8]] | 
 Sneak-Head Disadvantage, Sneak Attack! Headshot! Disadvantage.
-Attack roll [[2d20kl1]] to hit.
-Damage [[1d8 + 3 + 10 + 2d6]]
-If Critical +[[8]] |
-Normal-Head, Normal Attack. Headshot!
-Attack roll [[1d20]] to hit.
+Attack roll [[2d20kl1 + 1  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage [[1d8 + 3 + 10 + 3d6]]
+If Critical +[[8]] | 
+Normal-Head, Normal Attack. Headshot! 
+Attack roll [[1d20 + 1  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
 Damage [[1d8 + 3 + 10]]
-If Critical +[[8]] |
-Normal-Head Advantage, Normal Attack. Advantage! Headshot!
-Attack roll [[2d20kh1]] to hit
+If Critical +[[8]] | 
+Normal-Head Advantage, Normal Attack. Advantage! Headshot! 
+Attack roll [[2d20kh1 + 1  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit
 Damage [[1d8 + 3 + 10]]
 If Critical +[[8]] |
 Normal-Head Disadvantage, Normal Attack. Headshot! Disadvantage.
-Attack roll [[2d20kl1]] to hit
+Attack roll [[2d20kl1 + 1  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit
 Damage [[1d8 + 3 + 10]]
-If Critical +[[8]]
+If Critical +[[8]] 
 }}}
 
 ?{Rolling 20s |
@@ -157,50 +157,101 @@ If Critical +[[8]]
    Stealth-Disadvantage, Stealth check with disadvantage  for [[2d20kl1 + 7]] |
    Survival-Disadvantage, Survival check with disadvantage for [[2d20kl1 + 3]] }
 
-   &{template:npcaction}{{rname=Dagger - Main Hand}}{{description=Piercing
-?{Attack | Sneak, Sneak Attack!
-Attack roll [[1d20+5]] to hit.
-Damage [[1d4 + 3 + 2d6]]
-If Critical +[[4]] |
+&{template:npcaction}{{rname=Dagger - Main Hand}}{{description=Piercing
+?{Attack | Sneak, Sneak Attack! 
+Attack roll [[1d20 + 6  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage [[1d4 + 3 + 3d6]] 
+If Critical +[[4]] | 
 Sneak Advantage, Sneak Attack! Advantage!
-Attack roll [[2d20kh1 + 5]] to hit.
-Damage [[1d4 + 3 + 2d6]]
-If Critical +[[4]] |
+Attack roll [[2d20kh1 + 6  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage [[1d4 + 3 + 3d6]]
+If Critical +[[4]] | 
 Sneak Disadvantage, Sneak Attack! Disadvantage.
-Attack roll [[2d20kl1 + 5]] to hit.
-Damage [[1d4 + 3 + 2d6]]
-If Critical +[[4]] |
+Attack roll [[2d20kl1 + 6  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage [[1d4 + 3 + 3d6]]
+If Critical +[[4]] | 
 Normal, Normal Attack
-Attack roll [[1d20+5]] to hit.
-Damage [[1d4+3]]
+Attack roll [[1d20 + 6  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage [[1d4 + 3]] 
 If Critical +[[4]] |
 Normal Advantage, Normal Attack. Advantage!
-Attack roll [[2d20kh1 + 5]] to hit.
-Damage [[1d4+3]]
+Attack roll [[2d20kh1 + 6  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage [[1d4 + 3]]
 If Critical +[[4]] |
 Normal Disadvantage, Normal Attack. Disadvantage.
-Attack roll [[2d20kl1 + 5]] to hit.
-Damage [[1d4+3]]
-If Critical +[[4]]
-}}}
+Attack roll [[2d20kl1 + 6  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage [[1d4 + 3]]
+If Critical +[[4]] }
+}}
+
 
 &{template:npcaction}{{rname=Dagger - Off Hand}}{{description=Piercing
-?{Attack |
-Normal, Normal Attack
-Attack roll [[1d20+5]] to hit.
+?{Attack | 
+Normal, Normal Attack 
+Attack roll [[1d20 + 6  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
 Damage: [[1d4]]
 If Critical: +([[4]] dmg) |
 Normal Advantage, Advantage!
-Attack roll [[2d20kh1 + 5]] to hit
-Damage: [[1d4]]
+Attack roll [[2d20kh1 + 6  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit
+Damage: [[1d4]] 
 If Critical: +([[4]] dmg) |
 Normal Disadvantage, Disadvantage.
-Attack roll [[2d20kl1 + 5]] to hit
-Damage: [[1d4]]
-If Critical: +([[4]] dmg)
-}}}
+Attack roll [[2d20kl1 + 6  + ?{Bonus &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit
+Damage: [[1d4]] 
+If Critical: +([[4]] dmg) } 
+}}
 
 /em casts Cure Wounds at ?{Level |
 1st, 1st level on ?{Target &#124; Fergus &#124; Kallista &#124; Kwilgok &#124; Morden  &#124; Natsu  &#124; Someone &#125; for [[1d8 + 3]]! |
 2nd, 2nd level on ?{Target &#124; Fergus &#124; Kallista &#124; Kwilgok &#124; Morden  &#124; Natsu  &#124; Someone &#125; for [[2d8 + 3]]! |
 3rd, 3rd level on ?{Target &#124; Fergus &#124; Kallista &#124; Kwilgok &#124; Morden  &#124; Natsu  &#124; Someone &#125; for [[3d8 + 3]]! }
+
+&{template:npcaction}{{rname=Guiding Bolt}}{{description=Cleric Evocation (120' range)
+?{Level| 
+1st Normal, 1st Level Guiding Bolt 
+Attack roll [[1d20 + 6  + ?{Bless &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage: [[4d6]] |
+1st Advantage, 1st Level Guiding Bolt
+Advantage!
+Attack roll [[2d20kh1 + 6  + ?{Bless &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage: [[4d6]] |
+1st Disadvantage, 1st Level Guiding Bolt
+Disadvantage
+Attack roll [[2d20kl1 + 6  + ?{Bless &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage: [[4d6]] |
+2nd Normal, 2nd Level Guiding Bolt 
+Attack roll [[1d20 + 6  + ?{Bless &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage: [[5d6]] |
+2nd Advantage, 2nd Level Guiding Bolt
+Advantage!
+Attack roll [[2d20kh1 + 6  + ?{Bless &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage: [[5d6]] |
+2nd Disadvantage, 2nd Level Guiding Bolt
+Disadvantage
+Attack roll [[2d20kl1 + 6  + ?{Bless &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage: [[5d6]] |
+3rd Normal, 3rd Level Guiding Bolt 
+Attack roll [[1d20 + 6  + ?{Bless &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage: [[6d6]] |
+3rd Advantage, 3rd Level Guiding Bolt
+Advantage!
+Attack roll [[2d20kh1 + 6  + ?{Bless &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage: [[6d6]] |
+3rd Disadvantage, 3rd Level Guiding Bolt
+Disadvantage
+Attack roll [[2d20kl1 + 6  + ?{Bless &#124; No &#44;0 &#124; Bless &#44; 1d4 &#125; ]] to hit.
+Damage: [[6d6]] }
+}}
+
+&{template:npcaction}{{rname=Group Heal}}{{description=Cleric Evocation
+?{Spell| 
+Prayer of Healing, Prayer of Healing
+(30' range&#44; 6 visible targets)
+Heals 6 people for [[?{Level &#124; 2nd &#44;2d8 + 3 &#124;3rd &#44; 3d8 + 3 &#125; ]] hp each. |
+Mass Healing Word, Mass Healing Word
+(60' range&#44; 6 visible targets)
+Heals 6 people for [[1d4 + 3]] hp each. }
+}}
+
+
+
